@@ -1,10 +1,5 @@
-import Logo from "assets/logo_white.svg";
 import { twMerge } from "tailwind-merge";
-import Instagram from "@acme/ui-lib/icons/social-media/Instagram.svg";
 import { ContentSection } from "../components/ContentSection";
-import Linkedin from "@acme/ui-lib/icons/social-media/Linkedin.svg";
-import Tiktok from "@acme/ui-lib/icons/social-media/Tiktok.svg";
-import stylesFooter from "./stylesFooter.module.css";
 
 export interface ITitleProps {
   text: string;
