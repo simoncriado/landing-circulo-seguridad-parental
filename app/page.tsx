@@ -2,15 +2,18 @@
 
 import Image from "next/image";
 import { ContentSection } from "./components/ContentSection";
-import { ButtonLink } from "./components/ButtonLink";
 import SectionReviews from "./sections/Reviews";
 import Footer from "./sections/Footer";
+import AdditionalInformation from "./sections/AdditionalInformation";
+import InformativeSession from "./sections/InformativeSession";
+import SectionContact from "./sections/Contact";
+import SectionFAQ from "./sections/SectionFAQ";
 
 export default function Home() {
   return (
     // Wrap the layout
     <div className="flex flex-col min-h-screen">
-      <main className="flex-grow flex flex-col items-center">
+      <main className="flex-grow flex flex-col items-center bg-gradient-to-br from-[#f2fcfb] to-[#d6f7f3]">
         <div className="relative w-full">
           <Image
             src="/assets/landingPageHeroImage.jpg"
@@ -25,19 +28,31 @@ export default function Home() {
               <div className="flex flex-col gap-y-6 text-center md:text-left">
                 <div className="flex flex-col gap-y-4 md:w-[450px] text-white">
                   <h1 className="headline-lg">
-                    Mejores ofertas de renting de coches eléctricos e híbridos
+                    Círculo de Seguridad Parental COSP ®
                   </h1>
                   <p>
-                    Porque tener un coche sostenible no tiene que ser
-                    complicado.
+                    Descubre el programa innovador: <strong>Conexión</strong> y
+                    relaciones con <strong>apego seguro</strong> para padres,
+                    madres y cuidadores.
+                  </p>
+                  <p>
+                    Un programa de crianza consciente basado en décadas de
+                    investigación sobre apego seguro y relaciones afectivas
+                    eficaces.
                   </p>
                 </div>
-                <ButtonLink text="Formulario de inscripción" href="#" />
               </div>
             </ContentSection>
           </div>
         </div>
+        <AdditionalInformation />
         <SectionReviews reviews={reviews} />
+        <InformativeSession />
+        <SectionFAQ
+          heading="Preguntas frecuentes sobre el Círculo de Seguridad Parental"
+          items={ItemsFAQS}
+        />
+        <SectionContact />
       </main>
       <Footer />
     </div>
@@ -74,5 +89,133 @@ const reviews = [
     date: "28.08.2024",
     numStars: 5,
     text: "Nos ayudaron a buscar y conseguir la mejor oferta en el vehículo. Muy pendientes de nuestras necesidades y de lo que buscábamos hasta que lo consiguieron. Además también te gestionan la instalación del punto de carga. Muy recomendable la gestión de nuestro comercial.",
+  },
+];
+
+const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
+  {
+    question: "¿Cuánto tardáis en instalar mi cargador de vehículo eléctrico?",
+    answer: (
+      <>
+        <p>
+          Tu <b>cargador de vehículo eléctrico</b> estará instalado en un plazo
+          de 10 días laborables desde que confirmemos tu pago.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "¿Cuántos años de garantía tienen los cargadores para coches?",
+    answer: (
+      <>
+        <p>
+          Los <b>cargadores para coches</b> de Emotion tienen de 3 a 4 años de
+          garantía en función del modelo que elijas. Todos tienen servicio
+          postventa gratis.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "¿Puedo instalar un punto de carga para coche eléctrico en mi garaje comunitario?",
+    answer: (
+      <>
+        <p>
+          Claro, podemos instalarte un punto de carga (o los que necesites) para
+          tu empresa. Las ayudas del Estado son más pequeñas que cuando instalas
+          un cargador de coche eléctrico como particular, pero aún así también
+          suponen mucho ahorro.
+        </p>
+        <p>
+          Escríbenos y te asesoraremos con todo. Hasta podemos proporcionarte la
+          flota de vehículos híbridos o eléctricos de renting para que ahorres
+          todavía más.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "¿Puedo instalar el punto de carga como autónomo o empresa?",
+    answer: (
+      <>
+        <p>
+          Claro, podemos instalarte un punto de carga (o los que necesites) para
+          tu empresa. Las ayudas del Estado son más pequeñas que cuando instalas
+          un cargador de coche eléctrico como particular, pero aún así también
+          suponen mucho ahorro.
+        </p>
+        <p>
+          Escríbenos y te asesoraremos con todo. Hasta podemos proporcionarte la
+          flota de vehículos híbridos o eléctricos de renting para que ahorres
+          todavía más.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "¿Qué permisos necesito para instalar un cargador de vehículo eléctrico?",
+    answer: (
+      <>
+        <p>
+          Si vives en una comunidad de vecinos, no es necesario que pidas
+          permiso para instalar tu <b>cargador de coche eléctrico</b> o híbrido
+          enchufable. Simplemente, notifica al presidente o administrador que
+          vas a instalar un punto de recarga.
+        </p>
+        <p>
+          En Emotion te asesoramos gratis si tienes otras dudas relativas a los
+          permisos o licencias, aunque te adelantamos que no hay trabas legales.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "¿Hay cargadores solares para coches eléctricos?",
+    answer: (
+      <>
+        <p>
+          No existe algo como un <b>cargador solar para coche eléctrico.</b>{" "}
+          Simplemente, puedes conectar tus placas solares al punto de carga que
+          instalemos.
+        </p>
+        <p>
+          En el estudio inicial tendrás que decirnos qué placas solares tienes
+          instaladas en casa para buscar el <b>cargador eléctrico</b> adecuado.
+          Además, también podemos instalarte las placas si aún no las tienes.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "¿Puedo utilizar mi cargador de coche eléctrico aunque cambie de vehículo?",
+    answer: (
+      <>
+        <p>
+          Sí, los <b>cargadores domésticos para coche eléctrico</b> valen para
+          todas las marcas y modelos.
+        </p>
+        <p>
+          Hoy en día el conector está estandarizado para todos los coches
+          eléctricos, así que hasta podrías compartir el <b>punto de carga</b>{" "}
+          con algún vecino.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Si me mudo, ¿qué pasa con mi cargador eléctrico?",
+    answer: (
+      <>
+        <p>
+          Si te mudas, el <b>cargador de tu coche eléctrico</b> seguirá
+          funcionando en tu nueva vivienda. Tendremos que realizar la
+          instalación de nuevo, pero el coste del <b>cargador eléctrico</b> ya
+          lo abonaste en su momento y no hay por qué cambiarlo.
+        </p>
+      </>
+    ),
   },
 ];

@@ -18,10 +18,10 @@ export function ButtonLink({
     <Link
       className={twMerge(
         "p-3 flex justify-center rounded-md w-full h-fit md:max-w-[312px]",
-        "bg-[#088F8F] ",
-        "focus:outline focus:outline-2",
-        "hover:bg-[#066e6e]",
-        "active:bg-[#055d5d] active:outline-none",
+        "bg-[#009d94]",
+        "focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#007d77]",
+        "hover:bg-[#007d77]",
+        "active:bg-[#006963] active:outline-none",
         className
       )}
       href={href}

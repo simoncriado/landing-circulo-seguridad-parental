@@ -1,0 +1,50 @@
+.disclosure {
+  border-top-width: 1px;
+}
+.disclosure:nth-last-child(1) {
+  border-bottom-width: 1px;
+}
+
+.disclosure .disclosure-add {
+  position: relative;
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+}
+
+.disclosure .disclosure-add > span {
+  background-color: #393939;
+  width: 14px;
+  height: 2px;
+  transform-origin: center;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  border-radius: 8px;
+  transition: all 200ms ease-in-out;
+}
+.disclosure .disclosure-add > span:nth-child(2) {
+  opacity: 0;
+}
+
+.disclosure:not([data-headlessui-state="open"])
+  .disclosure-add
+  > span:nth-child(1) {
+  transform: rotate(-90deg);
+}
+.disclosure:not([data-headlessui-state="open"])
+  .disclosure-add
+  > span:nth-child(2) {
+  transform: rotate(-180deg);
+  opacity: 1;
+}
+
+/* .FAQ_disclosure__FB7al[data-headlessui-state="open"] .FAQ_disclosure-add__jBqt5 > span:nth-child(2) */
+
+.panel ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}

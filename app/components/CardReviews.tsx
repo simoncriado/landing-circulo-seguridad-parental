@@ -35,7 +35,7 @@ export default function CardReviews({
       <div className="flex gap-x-[6px]">
         {[...Array(numStars)].map((_, i) => (
           <div key={`star-${i}-author-${author}`} className="relative w-4 h-4">
-            <Star className={`[&_path]:fill-[#088F8F]`}></Star>
+            <Star className={`[&_path]:fill-[#009d94]`}></Star>
           </div>
         ))}
       </div>
