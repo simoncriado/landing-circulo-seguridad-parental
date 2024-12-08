@@ -1,0 +1,52 @@
+.swiper :global(.swiper-slide) {
+  margin-bottom: 20px;
+  width: fit-content;
+  height: auto;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+  background-color: #e9e9e9;
+  opacity: 1;
+}
+
+.swiper :global(.swiper-pagination-bullet.swiper-pagination-bullet-active) {
+  background-color: #3f3f3f;
+}
+
+@media (min-width: 768px) {
+  .swiper :global(.swiper-button-prev),
+  .swiper :global(.swiper-button-next) {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper:global(.sm-full) :global(.swiper-slide) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper :global(.swiper-button-prev),
+  .swiper :global(.swiper-button-next) {
+    display: none;
+  }
+}
+
+.swiper :global(.swiper-button-next) {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjYxOTYgMi45OUMxNi4xMjk2IDIuNSAxNS4zMzk2IDIuNSAxNC44NDk2IDIuOTlMNi41Mzk1NyAxMS4zQzYuMTQ5NTcgMTEuNjkgNi4xNDk1NyAxMi4zMiA2LjUzOTU3IDEyLjcxTDE0Ljg0OTYgMjEuMDJDMTUuMzM5NiAyMS41MSAxNi4xMjk2IDIxLjUxIDE2LjYxOTYgMjEuMDJDMTcuMTA5NiAyMC41MyAxNy4xMDk2IDE5Ljc0IDE2LjYxOTYgMTkuMjVMOS4zNzk1NyAxMkwxNi42Mjk2IDQuNzVDMTcuMTA5NiA0LjI3IDE3LjEwOTYgMy40NyAxNi42MTk2IDIuOTlaIiBmaWxsPSIjMzkzOTM5Ii8+Cjwvc3ZnPgo=");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  transform: rotate(180deg);
+}
+
+.swiper :global(.swiper-button-prev) {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjYxOTYgMi45OUMxNi4xMjk2IDIuNSAxNS4zMzk2IDIuNSAxNC44NDk2IDIuOTlMNi41Mzk1NyAxMS4zQzYuMTQ5NTcgMTEuNjkgNi4xNDk1NyAxMi4zMiA2LjUzOTU3IDEyLjcxTDE0Ljg0OTYgMjEuMDJDMTUuMzM5NiAyMS41MSAxNi4xMjk2IDIxLjUxIDE2LjYxOTYgMjEuMDJDMTcuMTA5NiAyMC41MyAxNy4xMDk2IDE5Ljc0IDE2LjYxOTYgMTkuMjVMOS4zNzk1NyAxMkwxNi42Mjk2IDQuNzVDMTcuMTA5NiA0LjI3IDE3LjEwOTYgMy40NyAxNi42MTk2IDIuOTlaIiBmaWxsPSIjMzkzOTM5Ii8+Cjwvc3ZnPgo=");
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.swiper :global(.swiper-button-next):after,
+.swiper :global(.swiper-button-prev):after {
+  content: "";
+}

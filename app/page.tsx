@@ -1,101 +1,78 @@
+"use client";
+
 import Image from "next/image";
+import { ContentSection } from "./components/ContentSection";
+import { ButtonLink } from "./components/ButtonLink";
+import SectionReviews from "./sections/Reviews";
+import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    // Wrap the layout
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow flex flex-col items-center">
+        <div className="relative w-full">
+          <Image
+            src="/assets/landingPageHeroImage.jpg"
+            alt="Background Image"
+            fill
+            priority
+            className="z-0 object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[#000000] bg-opacity-40 z-10"></div>
+          <div className="relative z-20">
+            <ContentSection className="flex flex-col lg:flex-row gap-y-6 lg:py-40 xl:py-60 lg:justify-between">
+              <div className="flex flex-col gap-y-6 text-center md:text-left">
+                <div className="flex flex-col gap-y-4 md:w-[450px] text-white">
+                  <h1 className="headline-lg">
+                    Mejores ofertas de renting de coches eléctricos e híbridos
+                  </h1>
+                  <p>
+                    Porque tener un coche sostenible no tiene que ser
+                    complicado.
+                  </p>
+                </div>
+                <ButtonLink text="Formulario de inscripción" href="#" />
+              </div>
+            </ContentSection>
+          </div>
         </div>
+        <SectionReviews reviews={reviews} />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
+
+const reviews = [
+  {
+    author: "Juan Carlos Marian Villar",
+    date: "25.09.2024",
+    numStars: 5,
+    text: "Trabajo impecable. Después de acompañar el equipo de montaje, estoy muy satisfecho por el trabajo realizado. Se respetaron las infraestructuras y se realizó un trabajo impecable y una puesta en marcha en compañía del supervisor. El montaje fue impecable y los operarios igualmente. Además, el equipo de operaciones y documentación están siempre pendientes de todo.",
+  },
+  {
+    author: "Juanjo",
+    date: "16.09.2024",
+    numStars: 5,
+    text: "Estoy muy satisfecho con toda la gestión que han efectuado. Me asesora con el modelo más adecuado a mis necesidades. La instalación se realizó de forma rápida y eficiente. Luego se encargaron de realizar todas las gestiones administrativas con la Comunidad de Madrid para gestionar la subvención. Me han asesorado en todo momento hasta el cobro de la subvención. Enhorabuena por vuestro trabajo.",
+  },
+  {
+    author: "Borja Muñoz",
+    date: "29.08.2024",
+    numStars: 5,
+    text: "Experiencia muy positiva. Desde el primer momento nos ayudaron con la mejor opción y buscando lo que realmente necesitábamos. Jorge fue muy amable y estuvo pendiente en todo momento de la evolución de nuestro pedido. Muy recomendable y funciona perfectamente.",
+  },
+  {
+    author: "Carlos Alvarado Salcedo",
+    date: "30.08.2024",
+    numStars: 5,
+    text: "La atención y el seguimiento han sido muy positivos. La verdad es que el presupuesto ha sido el más ajustado de todos los que recibí. La instalación fue en el día pactado y con mucha puntualidad. El servicio postventa, de momento, está siendo muy valioso.",
+  },
+  {
+    author: "Carlos",
+    date: "28.08.2024",
+    numStars: 5,
+    text: "Nos ayudaron a buscar y conseguir la mejor oferta en el vehículo. Muy pendientes de nuestras necesidades y de lo que buscábamos hasta que lo consiguieron. Además también te gestionan la instalación del punto de carga. Muy recomendable la gestión de nuestro comercial.",
+  },
+];
