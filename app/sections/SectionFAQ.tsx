@@ -41,7 +41,6 @@ export default function SectionFAQ({ items, heading }: IFAQSectionProps) {
             </div>
           </Disclosure.Button>
           <Transition
-            className="overflow-hidden"
             enter="transition transition-[max-height] duration-200 ease-in"
             enterFrom="transform max-h-0"
             enterTo="transform max-h-[1200px]"
