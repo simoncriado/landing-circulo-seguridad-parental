@@ -27,7 +27,7 @@ export default function SectionFAQ({ items, heading }: IFAQSectionProps) {
       )}
       defaultOpen={defaultOpen}
     >
-      {({ open }) => (
+      {({}) => (
         <>
           <Disclosure.Button className={twMerge("text-left text-base")}>
             <div className="flex justify-between items-center gap-x-4 ">
@@ -66,7 +66,7 @@ export default function SectionFAQ({ items, heading }: IFAQSectionProps) {
     <ContentSection className="flex flex-col gap-y-10">
       <h2 className="headline-lg">{heading}</h2>
       <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-6 w-full">
-        {items.map(({ answer, question }, i) => (
+        {items.map(({ answer, question }) => (
           <FaqItemComponent
             key={`faq_item_${question}`}
             question={question}
