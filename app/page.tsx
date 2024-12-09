@@ -48,7 +48,7 @@ export default function Home() {
                 </div>
                 <ButtonLink
                   text="Inscríbete a la charla"
-                  href={"https://forms.gle/VqjQmzDtzivMFZPs5"}
+                  href={"https://forms.gle/9mSfPUFrfnkK86kBA"}
                   external={true}
                 />
               </div>
