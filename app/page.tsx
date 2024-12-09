@@ -41,10 +41,13 @@ export default function Home() {
                     investigación sobre apego seguro y relaciones afectivas
                     eficaces.
                   </p>
-                  <p>Para inscribirte a la charla gratuita haz click aquí 👇🏽</p>
+                  <p>
+                    Para inscribirte a la charla <strong>gratuita</strong> haz
+                    click aquí 👇🏽
+                  </p>
                 </div>
                 <ButtonLink
-                  text="Formulario de inscripción"
+                  text="Inscríbete a la charla"
                   href={"https://forms.gle/VqjQmzDtzivMFZPs5"}
                   external={true}
                 />
@@ -136,6 +139,32 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
     ),
   },
   {
+    question: "¿Por qué es importante el apego seguro en la crianza?",
+    answer: (
+      <>
+        <p>
+          - El apego es la base del aprendizaje emocional: Desde bebés y sobre
+          todo en la edad preescolar, los niños y niñas sientan las bases para
+          la competencia social, la capacidad de afrontar el estrés y la
+          regulación emocional. Se ha evidenciado que la relación de apego
+          seguro con los cuidadores es un factor protector.
+        </p>
+        <p>
+          - Muchos padres y madres tienden a repetir patrones heredados de su
+          propia crianza. El programa invita a tomar consciencia de ellos y si
+          es necesario, a modificarlos para llegar a ser lo que llaman “padres y
+          madres suficientemente buenos”. No hay familias perfectas.
+        </p>
+        <p>
+          - Estudios demuestran que los problemas de apego en la infancia y
+          primera infancia aumentan la probabilidad de psicopatología en la vida
+          adulta, mientras que un apego seguro contribuye al bienestar
+          biopsicosocial.
+        </p>
+      </>
+    ),
+  },
+  {
     question: "¿Pueden cambiar las relaciones gracias al apego seguro?",
     answer: (
       <>
@@ -163,7 +192,7 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
     ),
   },
   {
-    question: "¿Cómo funciona?",
+    question: "¿Cómo funciona el programa?",
     answer: (
       <>
         <p>- 8 Sesiones semanales, grupales, estructuradas y prácticas.</p>
