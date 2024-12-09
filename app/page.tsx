@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { ContentSection } from "./components/ContentSection";
-import SectionReviews from "./sections/Reviews";
+// import SectionReviews from "./sections/Reviews";
 import Footer from "./sections/Footer";
 import AdditionalInformation from "./sections/AdditionalInformation";
 import InformativeSession from "./sections/InformativeSession";
 import SectionContact from "./sections/Contact";
 import SectionFAQ from "./sections/SectionFAQ";
+import { ButtonLink } from "./components/ButtonLink";
 
 export default function Home() {
   return (
@@ -40,13 +41,19 @@ export default function Home() {
                     investigación sobre apego seguro y relaciones afectivas
                     eficaces.
                   </p>
+                  <p>Para inscribirte a la charla gratuita haz click aquí 👇🏽</p>
                 </div>
+                <ButtonLink
+                  text="Formulario de inscripción"
+                  href={"https://forms.gle/VqjQmzDtzivMFZPs5"}
+                  external={true}
+                />
               </div>
             </ContentSection>
           </div>
         </div>
         <AdditionalInformation />
-        <SectionReviews reviews={reviews} />
+        {/* <SectionReviews reviews={reviews} /> */}
         <InformativeSession />
         <SectionFAQ
           heading="Preguntas frecuentes sobre el Círculo de Seguridad Parental"
@@ -59,161 +66,144 @@ export default function Home() {
   );
 }
 
-const reviews = [
-  {
-    author: "Juan Carlos Marian Villar",
-    date: "25.09.2024",
-    numStars: 5,
-    text: "Trabajo impecable. Después de acompañar el equipo de montaje, estoy muy satisfecho por el trabajo realizado. Se respetaron las infraestructuras y se realizó un trabajo impecable y una puesta en marcha en compañía del supervisor. El montaje fue impecable y los operarios igualmente. Además, el equipo de operaciones y documentación están siempre pendientes de todo.",
-  },
-  {
-    author: "Juanjo",
-    date: "16.09.2024",
-    numStars: 5,
-    text: "Estoy muy satisfecho con toda la gestión que han efectuado. Me asesora con el modelo más adecuado a mis necesidades. La instalación se realizó de forma rápida y eficiente. Luego se encargaron de realizar todas las gestiones administrativas con la Comunidad de Madrid para gestionar la subvención. Me han asesorado en todo momento hasta el cobro de la subvención. Enhorabuena por vuestro trabajo.",
-  },
-  {
-    author: "Borja Muñoz",
-    date: "29.08.2024",
-    numStars: 5,
-    text: "Experiencia muy positiva. Desde el primer momento nos ayudaron con la mejor opción y buscando lo que realmente necesitábamos. Jorge fue muy amable y estuvo pendiente en todo momento de la evolución de nuestro pedido. Muy recomendable y funciona perfectamente.",
-  },
-  {
-    author: "Carlos Alvarado Salcedo",
-    date: "30.08.2024",
-    numStars: 5,
-    text: "La atención y el seguimiento han sido muy positivos. La verdad es que el presupuesto ha sido el más ajustado de todos los que recibí. La instalación fue en el día pactado y con mucha puntualidad. El servicio postventa, de momento, está siendo muy valioso.",
-  },
-  {
-    author: "Carlos",
-    date: "28.08.2024",
-    numStars: 5,
-    text: "Nos ayudaron a buscar y conseguir la mejor oferta en el vehículo. Muy pendientes de nuestras necesidades y de lo que buscábamos hasta que lo consiguieron. Además también te gestionan la instalación del punto de carga. Muy recomendable la gestión de nuestro comercial.",
-  },
-];
+// const reviews = [
+//   {
+//     author: "Juan Carlos Marian Villar",
+//     date: "25.09.2024",
+//     numStars: 5,
+//     text: "Trabajo impecable. Después de acompañar el equipo de montaje, estoy muy satisfecho por el trabajo realizado. Se respetaron las infraestructuras y se realizó un trabajo impecable y una puesta en marcha en compañía del supervisor. El montaje fue impecable y los operarios igualmente. Además, el equipo de operaciones y documentación están siempre pendientes de todo.",
+//   },
+//   {
+//     author: "Juanjo",
+//     date: "16.09.2024",
+//     numStars: 5,
+//     text: "Estoy muy satisfecho con toda la gestión que han efectuado. Me asesora con el modelo más adecuado a mis necesidades. La instalación se realizó de forma rápida y eficiente. Luego se encargaron de realizar todas las gestiones administrativas con la Comunidad de Madrid para gestionar la subvención. Me han asesorado en todo momento hasta el cobro de la subvención. Enhorabuena por vuestro trabajo.",
+//   },
+//   {
+//     author: "Borja Muñoz",
+//     date: "29.08.2024",
+//     numStars: 5,
+//     text: "Experiencia muy positiva. Desde el primer momento nos ayudaron con la mejor opción y buscando lo que realmente necesitábamos. Jorge fue muy amable y estuvo pendiente en todo momento de la evolución de nuestro pedido. Muy recomendable y funciona perfectamente.",
+//   },
+//   {
+//     author: "Carlos Alvarado Salcedo",
+//     date: "30.08.2024",
+//     numStars: 5,
+//     text: "La atención y el seguimiento han sido muy positivos. La verdad es que el presupuesto ha sido el más ajustado de todos los que recibí. La instalación fue en el día pactado y con mucha puntualidad. El servicio postventa, de momento, está siendo muy valioso.",
+//   },
+//   {
+//     author: "Carlos",
+//     date: "28.08.2024",
+//     numStars: 5,
+//     text: "Nos ayudaron a buscar y conseguir la mejor oferta en el vehículo. Muy pendientes de nuestras necesidades y de lo que buscábamos hasta que lo consiguieron. Además también te gestionan la instalación del punto de carga. Muy recomendable la gestión de nuestro comercial.",
+//   },
+// ];
 
 const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
   {
-    question: "¿Cuánto tardáis en instalar mi cargador de vehículo eléctrico?",
+    question: "¿Cuál es el objetivo principal del COSP?",
     answer: (
       <>
         <p>
-          Tu <b>cargador de vehículo eléctrico</b> estará instalado en un plazo
-          de 10 días laborables desde que confirmemos tu pago.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "¿Cuántos años de garantía tienen los cargadores para coches?",
-    answer: (
-      <>
-        <p>
-          Los <b>cargadores para coches</b> de Emotion tienen de 3 a 4 años de
-          garantía en función del modelo que elijas. Todos tienen servicio
-          postventa gratis.
+          Crear un vínculo seguro que fomente el desarrollo emocional y
+          autonomía en los niños/as. Para ello, se ofrece un “manual de
+          instrucciones” que permite comprender mejor las necesidades
+          emocionales de los niños/as y responder a ellas de forma eficaz.
         </p>
       </>
     ),
   },
   {
     question:
-      "¿Puedo instalar un punto de carga para coche eléctrico en mi garaje comunitario?",
+      "¿Cuáles son los principios clave que se trabajan durante las sesiones?",
     answer: (
       <>
         <p>
-          Claro, podemos instalarte un punto de carga (o los que necesites) para
-          tu empresa. Las ayudas del Estado son más pequeñas que cuando instalas
-          un cargador de coche eléctrico como particular, pero aún así también
-          suponen mucho ahorro.
+          <b>Seguridad emocional:</b> Los niños y niñas buscan a sus madres,
+          padres y cuidadores como base segura para explorar el mundo con
+          confianza y regresar a ellos cuando necesitan apoyo o consuelo.
         </p>
         <p>
-          Escríbenos y te asesoraremos con todo. Hasta podemos proporcionarte la
-          flota de vehículos híbridos o eléctricos de renting para que ahorres
-          todavía más.
+          <b>Conexión auténtica:</b> Más que atención los niños y niñas
+          necesitan sentir conexión genuina con sus figuras de cuidado.
+        </p>
+        <p>
+          <b>Reparación y aprendizaje:</b> Los errores son inevitables, nos
+          hacen aprender. El programa COSP enseña cómo repararlos para
+          fortalecer la relación.
         </p>
       </>
     ),
   },
   {
-    question: "¿Puedo instalar el punto de carga como autónomo o empresa?",
+    question: "¿Pueden cambiar las relaciones gracias al apego seguro?",
     answer: (
       <>
         <p>
-          Claro, podemos instalarte un punto de carga (o los que necesites) para
-          tu empresa. Las ayudas del Estado son más pequeñas que cuando instalas
-          un cargador de coche eléctrico como particular, pero aún así también
-          suponen mucho ahorro.
-        </p>
-        <p>
-          Escríbenos y te asesoraremos con todo. Hasta podemos proporcionarte la
-          flota de vehículos híbridos o eléctricos de renting para que ahorres
-          todavía más.
+          Los vínculos de apego son susceptibles de mejorar a lo largo del
+          tiempo y los cambios duraderos provienen del desarrollo de habilidades
+          emocionales específicas en vez de utilizar técnicas ara mejorar el
+          comportamiento.
         </p>
       </>
     ),
   },
   {
-    question:
-      "¿Qué permisos necesito para instalar un cargador de vehículo eléctrico?",
+    question: "¿Cuáles son los beneficios para la familia?",
     answer: (
       <>
+        <p>- Niños y niñas con mayor autoestima y habilidades sociales.</p>
+        <p>- Padres y madres más seguras y con herramientas efectivas.</p>
+        <p>- Relaciones familiares más respetuosas y conscientes.</p>
         <p>
-          Si vives en una comunidad de vecinos, no es necesario que pidas
-          permiso para instalar tu <b>cargador de coche eléctrico</b> o híbrido
-          enchufable. Simplemente, notifica al presidente o administrador que
-          vas a instalar un punto de recarga.
-        </p>
-        <p>
-          En Emotion te asesoramos gratis si tienes otras dudas relativas a los
-          permisos o licencias, aunque te adelantamos que no hay trabas legales.
+          - Oportunidad para reflexionar sobre cómo la propia experiencia de
+          apego influye en la forma de criar.
         </p>
       </>
     ),
   },
   {
-    question: "¿Hay cargadores solares para coches eléctricos?",
+    question: "¿Cómo funciona?",
     answer: (
       <>
+        <p>- 8 Sesiones semanales, grupales, estructuradas y prácticas.</p>
         <p>
-          No existe algo como un <b>cargador solar para coche eléctrico.</b>{" "}
-          Simplemente, puedes conectar tus placas solares al punto de carga que
-          instalemos.
+          - Metodología vivencial: vídeos, ejercicios, y mapas concretos para
+          invitar a los participantes a profundizar en sus propios patrones de
+          crianza, experiencias y aprender a responder con empatía y
+          sensibilidad hacia sus hijos/as.
         </p>
         <p>
-          En el estudio inicial tendrás que decirnos qué placas solares tienes
-          instaladas en casa para buscar el <b>cargador eléctrico</b> adecuado.
-          Además, también podemos instalarte las placas si aún no las tienes.
+          - Enfocado en situaciones diarias: rabietas, límites, separaciones y
+          gestión emocional.
         </p>
       </>
     ),
   },
   {
-    question:
-      "¿Puedo utilizar mi cargador de coche eléctrico aunque cambie de vehículo?",
+    question: "Evidencia científica",
     answer: (
       <>
         <p>
-          Sí, los <b>cargadores domésticos para coche eléctrico</b> valen para
-          todas las marcas y modelos.
-        </p>
-        <p>
-          Hoy en día el conector está estandarizado para todos los coches
-          eléctricos, así que hasta podrías compartir el <b>punto de carga</b>{" "}
-          con algún vecino.
+          Estudios han demostrado que la participación en el programa COSP,
+          mejora significativamente la calidad del vínculo entre padres, madres
+          y cuidadores y sus hijos/as, reduce comportamientos disruptivos y
+          promueve un desarrollo socioemocional positivo que influye
+          posteriormente en la edad adulta.
         </p>
       </>
     ),
   },
   {
-    question: "Si me mudo, ¿qué pasa con mi cargador eléctrico?",
+    question: "¿A quién está dirigido?",
     answer: (
       <>
         <p>
-          Si te mudas, el <b>cargador de tu coche eléctrico</b> seguirá
-          funcionando en tu nueva vivienda. Tendremos que realizar la
-          instalación de nuevo, pero el coste del <b>cargador eléctrico</b> ya
-          lo abonaste en su momento y no hay por qué cambiarlo.
+          A todas aquellas personas (padres, madres, cuidadores, abuelos/as,
+          familiares, auxiliares) que tengan un rol de cuidado en la vida de un
+          niño/niña. Especialmente útil para personas interesadas en fortalecer
+          la relación emocional con los niños y niñas, y gestionar mejor los
+          retos cotidianos de la crianza.
         </p>
       </>
     ),

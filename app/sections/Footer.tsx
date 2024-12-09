@@ -10,7 +10,7 @@ export default function FooterHomePage() {
     >
       <footer className="w-full mx-auto flex flex-col gap-y-8">
         {/* Footer Main Row */}
-        <div className="flex flex-col md:flex-row gap-y-6 gap-x-6 items-center md:items-start">
+        <div className="flex flex-col md:flex-row gap-y-6 gap-x-6 items-center ">
           {/* Left Column */}
           <div className="flex-1 md:flex-[3]">
             <p className="text-sm md:text-base mt-2">
@@ -23,20 +23,21 @@ export default function FooterHomePage() {
             <Image
               src="/assets/COSPLogo.jpg"
               alt="COSP Logo"
-              width={120}
-              height={120}
+              width={60}
+              height={60}
               className="rounded-full shadow-md"
             />
           </div>
 
-          {/* Right Column with Image */}
-          <div className="flex-1 md:flex-[1] flex justify-center">
+          {/* Right Column with SVG */}
+          <div className="flex-1 md:flex-[1] flex justify-center bg-white rounded-full">
             <Image
-              src="/assets/image2.jpg" // Replace with your actual image path
-              alt="Image Description 2"
+              src="/assets/svgviewer-output.svg"
+              alt="COSP Logo"
+              layout="intrinsic"
               width={120}
               height={120}
-              className="rounded-full shadow-md"
+              className="rounded-full h-16 w-56 lg:w-96 shadow-md"
             />
           </div>
         </div>
