@@ -18,14 +18,14 @@ export default function AdditionalInformation() {
             décadas de investigación sobre el apego seguro. Está diseñado para
             ayudar a padres y cuidadores a{" "}
             <strong>comprender las necesidades emocionales</strong> de sus
-            hijos, <strong>fortalecer el vínculo</strong> con ellos y promover
-            un desarrollo socioemocional saludable.
+            hijos/as, <strong>fortalecer el vínculo</strong> con ellos y
+            promover un desarrollo socioemocional saludable.
           </p>
           <p>
             Este enfoque práctico se estructura en ocho sesiones interactivas,
             donde se utilizan videos, ejercicios y reflexiones para ayudar a los
             participantes a profundizar en sus propios patrones de crianza y
-            aprender a responder con empatía y sensibilidad a sus hijos.
+            aprender a responder con empatía y sensibilidad a sus hijos/as.
           </p>
         </div>
         <div

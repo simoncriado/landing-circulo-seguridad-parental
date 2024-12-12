@@ -32,7 +32,7 @@ export default function InformativeSession() {
             Si estás interesada en asistir a una charla gratuita, ¡inscríbete!{" "}
           </p>
           <ButtonLink
-            text="Inscríbete a la charla"
+            text="Inscríbete a la charla gratuita"
             href={"https://forms.gle/9mSfPUFrfnkK86kBA"}
             external={true}
           />

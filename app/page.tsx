@@ -33,7 +33,7 @@ export default function Home() {
                   </h1>
                   <p>
                     Descubre el programa innovador: <strong>Conexión</strong> y
-                    relaciones con <strong>apego seguro</strong> para padres,
+                    relaciones con <strong>Apego Seguro</strong> para padres,
                     madres y cuidadores.
                   </p>
                   <p>
@@ -47,7 +47,7 @@ export default function Home() {
                   </p>
                 </div>
                 <ButtonLink
-                  text="Inscríbete a la charla"
+                  text="Inscríbete a la charla gratuita"
                   href={"https://forms.gle/9mSfPUFrfnkK86kBA"}
                   external={true}
                 />
@@ -143,23 +143,24 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
     answer: (
       <>
         <p>
-          - El apego es la base del aprendizaje emocional: Desde bebés y sobre
-          todo en la edad preescolar, los niños y niñas sientan las bases para
-          la competencia social, la capacidad de afrontar el estrés y la
+          - <b>El apego es la base del aprendizaje emocional:</b> Desde bebés y
+          sobre todo en la edad preescolar, los niños y niñas sientan las bases
+          para la competencia social, la capacidad de afrontar el estrés y la
           regulación emocional. Se ha evidenciado que la relación de apego
           seguro con los cuidadores es un factor protector.
         </p>
         <p>
-          - Muchos padres y madres tienden a repetir patrones heredados de su
-          propia crianza. El programa invita a tomar consciencia de ellos y si
-          es necesario, a modificarlos para llegar a ser lo que llaman “padres y
-          madres suficientemente buenos”. No hay familias perfectas.
+          - <b>Reflexión sobre patrones de crianza:</b> Muchos padres y madres
+          tienden a repetir patrones heredados de su propia crianza. El programa
+          invita a tomar consciencia de ellos y si es necesario, a modificarlos
+          para llegar a ser lo que llaman “padres y madres suficientemente
+          buenos”. No hay familias perfectas.
         </p>
         <p>
-          - Estudios demuestran que los problemas de apego en la infancia y
-          primera infancia aumentan la probabilidad de psicopatología en la vida
-          adulta, mientras que un apego seguro contribuye al bienestar
-          biopsicosocial.
+          - <b>El apego seguro mejora la salud mental:</b> Estudios demuestran
+          que los problemas de apego en la infancia y primera infancia aumentan
+          la probabilidad de psicopatología en la vida adulta, mientras que un
+          apego seguro contribuye al bienestar biopsicosocial.
         </p>
       </>
     ),
@@ -171,7 +172,7 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
         <p>
           Los vínculos de apego son susceptibles de mejorar a lo largo del
           tiempo y los cambios duraderos provienen del desarrollo de habilidades
-          emocionales específicas en vez de utilizar técnicas ara mejorar el
+          emocionales específicas en vez de utilizar técnicas para mejorar el
           comportamiento.
         </p>
       </>
@@ -214,11 +215,13 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
     answer: (
       <>
         <p>
-          Estudios han demostrado que la participación en el programa COSP,
-          mejora significativamente la calidad del vínculo entre padres, madres
-          y cuidadores y sus hijos/as, reduce comportamientos disruptivos y
-          promueve un desarrollo socioemocional positivo que influye
-          posteriormente en la edad adulta.
+          Estudios han demostrado que la <b>participación</b> en el{" "}
+          <b>programa COSP</b>, <b>mejora significativamente</b> la calidad del{" "}
+          <b>vínculo</b>
+          entre padres, madres y cuidadores y sus hijos/as,{" "}
+          <b>reduce comportamientos disruptivos</b> y promueve un{" "}
+          <b>desarrollo socioemocional positivo</b> que influye posteriormente
+          en la <b>edad adulta</b>.
         </p>
       </>
     ),
