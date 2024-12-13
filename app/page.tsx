@@ -21,7 +21,7 @@ export default function Home() {
             alt="Background Image"
             fill
             priority
-            className="z-0 object-cover object-center"
+            className="z-0 object-cover object-center scale-x-[-1]"
           />
           <div className="absolute inset-0 bg-[#000000] bg-opacity-40 z-10"></div>
           <div className="relative z-20">
