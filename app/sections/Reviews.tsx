@@ -18,7 +18,7 @@ export default function SectionTrustPilotCarousel({ reviews }: IReviewProps) {
       className="flex flex-col gap-y-6"
       bgClassName="before:bg-emotionNeutral-surface"
     >
-      <h2 className="headline-lg">Nuestros clientes opinan...</h2>
+      <h2 className="headline-lg">Testimonios</h2>
       <Swiper aria-label="opinions" navigation={false}>
         {reviews.map((review, index) => (
           <div key={index} className="pb-8 h-full">

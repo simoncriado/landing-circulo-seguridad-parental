@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ContentSection } from "./components/ContentSection";
-// import SectionReviews from "./sections/Reviews";
+import SectionReviews from "./sections/Reviews";
 import Footer from "./sections/Footer";
 import AdditionalInformation from "./sections/AdditionalInformation";
 import InformativeSession from "./sections/InformativeSession";
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </div>
         <AdditionalInformation />
-        {/* <SectionReviews reviews={reviews} /> */}
+        <SectionReviews reviews={reviews} />
         <InformativeSession />
         <SectionFAQ
           heading="Preguntas frecuentes sobre el Círculo de Seguridad Parental"
@@ -69,38 +69,45 @@ export default function Home() {
   );
 }
 
-// const reviews = [
-//   {
-//     author: "Juan Carlos Marian Villar",
-//     date: "25.09.2024",
-//     numStars: 5,
-//     text: "Trabajo impecable. Después de acompañar el equipo de montaje, estoy muy satisfecho por el trabajo realizado. Se respetaron las infraestructuras y se realizó un trabajo impecable y una puesta en marcha en compañía del supervisor. El montaje fue impecable y los operarios igualmente. Además, el equipo de operaciones y documentación están siempre pendientes de todo.",
-//   },
-//   {
-//     author: "Juanjo",
-//     date: "16.09.2024",
-//     numStars: 5,
-//     text: "Estoy muy satisfecho con toda la gestión que han efectuado. Me asesora con el modelo más adecuado a mis necesidades. La instalación se realizó de forma rápida y eficiente. Luego se encargaron de realizar todas las gestiones administrativas con la Comunidad de Madrid para gestionar la subvención. Me han asesorado en todo momento hasta el cobro de la subvención. Enhorabuena por vuestro trabajo.",
-//   },
-//   {
-//     author: "Borja Muñoz",
-//     date: "29.08.2024",
-//     numStars: 5,
-//     text: "Experiencia muy positiva. Desde el primer momento nos ayudaron con la mejor opción y buscando lo que realmente necesitábamos. Jorge fue muy amable y estuvo pendiente en todo momento de la evolución de nuestro pedido. Muy recomendable y funciona perfectamente.",
-//   },
-//   {
-//     author: "Carlos Alvarado Salcedo",
-//     date: "30.08.2024",
-//     numStars: 5,
-//     text: "La atención y el seguimiento han sido muy positivos. La verdad es que el presupuesto ha sido el más ajustado de todos los que recibí. La instalación fue en el día pactado y con mucha puntualidad. El servicio postventa, de momento, está siendo muy valioso.",
-//   },
-//   {
-//     author: "Carlos",
-//     date: "28.08.2024",
-//     numStars: 5,
-//     text: "Nos ayudaron a buscar y conseguir la mejor oferta en el vehículo. Muy pendientes de nuestras necesidades y de lo que buscábamos hasta que lo consiguieron. Además también te gestionan la instalación del punto de carga. Muy recomendable la gestión de nuestro comercial.",
-//   },
-// ];
+const reviews = [
+  {
+    author: "Maira, abuela de Gaby (2 años)",
+    date: "Junio 2024",
+    numStars: 5,
+    text: "De este programa valoro el tiempo de reflexión que nos dieron, los momentos que tuvimos para interiorizar el aprendizaje y haberlo hecho en grupo fue bonito porque en grupo aprendemos todos. En grupo experimentamos emociones propias y compartidas y eso fue algo muy enriquecedor. Este grupo se basa en reconocer las necesidades del niño, si, pero que hay que poner unos límites, también. Lo recomendaría a todas las personas que tengan a cargo un niño, un menor porque veo que dejamos una huella seamos maestros, familiares, canguros, padres, madres abuelos, y porque están cuidando de alguien y manejando emociones.",
+  },
+  {
+    author: "Silvia, madre de Gala (2 años)",
+    date: "Abril 2024",
+    numStars: 5,
+    text: "Los cambios qué más he notado tras realizar el programa es que las rabietas que tiene no las tiene tan intensas y sobre todo que conectamos más. Me ha gustado que fuese impartido por dos psicólogas, eso a mi me da mucha confianza. Lo recomendaría a todo el mundo porque al final esto lo puedes aplicar a cualquier vinculo o relación.",
+  },
+  {
+    author: "Emma, madre de Brais (5 años)",
+    date: "Abril 2024",
+    numStars: 5,
+    text: "Lo que he notado es que tras realizar el programa, a mi hijo le resulta más sencillo expresar más sus emociones, regularse mejor y también veo que no demanda tanto mi presencia de  “¡mamá, mamá!”. Además, si mi pareja y él tienen un conflicto lo pueden resolver sin pelea sin necesidad de que yo intervenga. Lo que veo es que el programa hace participar más al hijo, lo hace reflexionar más, conectar con sus sentimientos y no es a base ni de castigos ni de premios. Lo recomendaría a todo el mundo. Todo tipo de relaciones que de alguna manera te resulten difíciles te ayuda a verlas de otra manera.",
+  },
+  {
+    author: "Noelia, madre de Gabriela (4 años)",
+    date: "Marzo 2024",
+    numStars: 5,
+    text: "La primero que aprendí en el programa es a saber observar, a salir fuera de la situación y preguntarme: ¿qué está pasando, qué está necesitando mi hija?, y sobre todo, ser consciente de que la madre soy yo, soy yo la responsable del bienestar de mi hija y al serlo, pongo la atención en mi, en qué debo hacer  para que ella esté bien. Yo recomendaría el programa a todo el mundo, porque al final aprendes a como relacionarte de otra forma.",
+  },
+
+  {
+    author: "Santi, padre de Brais (5 años)",
+    date: "Marzo 2024",
+    numStars: 5,
+    text: "Me apunté al programa por la situación que tenía en casa, en la relación con mi hijo que era muy complicada, crispada por decirlo de alguna manera, y momentos de mucha tensión, en las que yo lo pasaba mal, él lo pasaba mal y mi pareja lo pasaba mal. Pienso que fue una buena decisión apuntarse. Aprendí que no se trata de ir imponiendo tus criterios si no siguiendo y acompañando las emociones y necesidades del niño para poder guiarlo y que sea un adulto que se pueda hacer cargo de sus propias emociones.",
+  },
+  {
+    author: "Maria, madre de dos mellizas",
+    date: "Mayo 2023",
+    numStars: 5,
+    text: "Para mi, paraticipar en la formación del Circulo de Seguridad ha significado encontrar un camino a seguir, un camino en el cual sentirme acompañada y descansar los miedos. Sin duda la maternindad consciente requiere de recursos prácticos y de compañer@s de camino.",
+  },
+];
 
 const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
   {

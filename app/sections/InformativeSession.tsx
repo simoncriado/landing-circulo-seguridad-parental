@@ -12,7 +12,10 @@ export default function InformativeSession() {
     >
       <h2 className="headline-lg">Charla gratuita para familias</h2>
       <div className="flex flex-col lg:flex-row gap-x-24 gap-y-6 md:gap-y-10 items-center">
-        <div className="w-full lg:w-1/2">
+        <div
+          style={{ borderRadius: "6px", overflow: "hidden" }}
+          className="w-full lg:w-1/2"
+        >
           <Image
             alt="Padres y madres atendiento a la charla informativa"
             src={InfoSessionImage}

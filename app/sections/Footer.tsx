@@ -14,7 +14,7 @@ export default function FooterHomePage() {
           {/* Left Column */}
           <div className="flex-1 md:flex-[3]">
             <p className="text-sm md:text-base mt-2">
-              © 2024 - Paola Castellanos - Paula Murcia
+              © 2025 - Paola Castellanos - Paula Murcia
             </p>
           </div>
 
