@@ -203,15 +203,23 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
     question: "¿Cómo funciona el programa?",
     answer: (
       <>
-        <p>- 8 Sesiones semanales, grupales, estructuradas y prácticas.</p>
         <p>
-          - Metodología vivencial: vídeos, ejercicios, y mapas concretos para
-          invitar a los participantes a profundizar en sus propios patrones de
-          crianza, experiencias y aprender a responder con empatía y
-          sensibilidad hacia sus hijos/as.
+          El programa lo impartimos en grupos pequeños (no más de 8 personas),
+          en un entorno de seguridad, durante 8 semanas, reuniéndonos con el
+          mismo grupo de padres/madres/cuidadores una vez a la semana durante
+          una hora y media cada encuentro.{" "}
         </p>
         <p>
-          - Enfocado en situaciones diarias: rabietas, límites, separaciones y
+          La <b>metodología</b> incluye:
+        </p>
+        <p>{`- Herramientas visuales (el "Círculo" como diagrama).`}</p>
+        <p>
+          - Vídeos ilustrativos de interacciones entre cuidadores y niño/as.
+        </p>
+        <p>
+          - Ejercicios prácticos para reflexionar sobre los patrones de apego
+          propios y cómo impactan en las relaciones con lo/as niño/as. Nos
+          centraremos en situaciones diarias: rabietas, límites, separaciones y
           gestión emocional.
         </p>
       </>
@@ -224,7 +232,7 @@ const ItemsFAQS: React.ComponentProps<typeof SectionFAQ>["items"] = [
         <p>
           Estudios han demostrado que la <b>participación</b> en el{" "}
           <b>programa COSP</b>, <b>mejora significativamente</b> la calidad del{" "}
-          <b>vínculo</b>
+          <b>vínculo </b>
           entre padres, madres y cuidadores y sus hijos/as,{" "}
           <b>reduce comportamientos disruptivos</b> y promueve un{" "}
           <b>desarrollo socioemocional positivo</b> que influye posteriormente

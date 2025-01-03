@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { ContentSection } from "../components/ContentSection";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FooterHomePage() {
   return (
@@ -16,6 +17,11 @@ export default function FooterHomePage() {
             <p className="text-sm md:text-base mt-2">
               © 2025 - Paola Castellanos - Paula Murcia
             </p>
+            <Link href={`https://oancenter.com/es`} target="_blank">
+              <p className="text-sm md:text-base">
+                OAN Center, Avda. Diagonal 427, 1º 7ª, Barcelona.
+              </p>
+            </Link>
           </div>
 
           {/* Middle Column with Image */}

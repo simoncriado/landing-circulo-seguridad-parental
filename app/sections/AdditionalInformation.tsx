@@ -8,24 +8,23 @@ export default function AdditionalInformation() {
     <ContentSection className={twMerge("flex flex-col gap-y-20")}>
       <div className="flex flex-col lg:flex-row gap-x-24 gap-y-6 md:gap-y-10 items-center">
         <div className="flex flex-col gap-4 w-full lg:w-1/2">
-          <h2 className="headline-lg">¿Qué es el COSP?</h2>
+          <h2 className="headline-lg">
+            ¿Qué es el Círculo de Seguridad Parental COSP?
+          </h2>
           <p>
-            Creado por <strong>Glen Cooper, Kent Hoffman y Bert Powell</strong>,
-            expertos en teoría del apego y neurobiología interpersonal.{" "}
+            Creado por Glen Cooper, Kent Hoffman y Bert Powell, expertos en
+            <strong> teoría del Apego</strong> y{" "}
+            <strong>neurobiología interpersonal</strong>.
           </p>
           <p>
-            El Círculo de Seguridad Parental (COSP) es un programa basado en
-            décadas de investigación sobre el apego seguro. Está diseñado para
-            ayudar a padres y cuidadores a{" "}
-            <strong>comprender las necesidades emocionales</strong> de sus
-            hijos/as, <strong>fortalecer el vínculo</strong> con ellos y
-            promover un desarrollo socioemocional saludable.
+            El <strong>Círculo de Seguridad Parental</strong> te ofrece un{" "}
+            <strong>mapa claro</strong> para comprender y satisfacer las
+            <strong> necesidades emocionales</strong> de tus hijos/as mientras
+            también trabajas en tu propio crecimiento personal y emocional.{" "}
           </p>
           <p>
-            Este enfoque práctico se estructura en ocho sesiones interactivas,
-            donde se utilizan videos, ejercicios y reflexiones para ayudar a los
-            participantes a profundizar en sus propios patrones de crianza y
-            aprender a responder con empatía y sensibilidad a sus hijos/as.
+            ¡Es una poderosa herramienta para fomentar relaciones sanas y
+            seguras!
           </p>
         </div>
         <div

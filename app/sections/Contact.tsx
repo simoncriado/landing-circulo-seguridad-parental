@@ -11,7 +11,7 @@ export default function SectionContact() {
             borderRadius: "8px",
             boxShadow: "0px 15px 25px 0px rgba(0, 0, 0, 0.08)",
           }}
-          className="transition-all bg-white px-4 py-6 w-full md:w-1/2 flex flex-col items-center"
+          className="transition-all bg-[#f2fcfb] px-4 py-6 w-full md:w-1/2 flex flex-col items-center"
         >
           <div className="w-full max-w-48 sm:w-48 h-64 mb-4 relative">
             <Image
@@ -25,7 +25,7 @@ export default function SectionContact() {
           <div className="text-center">
             <h2 className="font-bold mb-2">Paola Castellanos</h2>
             <p>Psicóloga, psicoterapeuta, facilitadora COSP</p>
-            <p className="mb-4">Número de colegiada: 20994 COPC</p>
+            <p className="mb-4">Nº. Col. 20994 COPC</p>
             <h3 className="font-semibold">Email:</h3>
             <Link href={`mailto:circulodeseguridadparental@gmail.com`}>
               <p className="break-all">circulodeseguridadparental@gmail.com</p>
@@ -37,7 +37,7 @@ export default function SectionContact() {
             borderRadius: "10px",
             boxShadow: "0px 15px 25px 0px rgba(0, 0, 0, 0.08)",
           }}
-          className="transition-all bg-white px-4 py-6 w-full md:w-1/2 flex flex-col items-center"
+          className="transition-all bg-[#f2fcfb] px-4 py-6 w-full md:w-1/2 flex flex-col items-center"
         >
           <div className="w-full max-w-48 sm:w-48 h-64 mb-4 relative">
             <Image
@@ -51,7 +51,7 @@ export default function SectionContact() {
           <div className="text-center">
             <h2 className="font-bold mb-2">Paula Murcia</h2>
             <p>Psicóloga, psicoterapeuta, facilitadora COSP</p>
-            <p className="mb-4">Número de colegiada: 16088 COPC</p>
+            <p className="mb-4">Nº. Col. 16088 COPC</p>
             <h3 className="font-semibold">Email:</h3>
             <Link href={`mailto:circulodeseguridadparental@gmail.com`}>
               <p className="break-all">circulodeseguridadparental@gmail.com</p>

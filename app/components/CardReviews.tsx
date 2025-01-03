@@ -21,7 +21,7 @@ export default function CardReviews({
     <div
       className={twMerge(
         "w-[288px] h-full lg:w-full",
-        "flex flex-col gap-4 rounded-lg border bg-white p-4",
+        "flex flex-col gap-4 rounded-lg border bg-[#f2fcfb] p-4",
         "rounded-2",
         className
       )}

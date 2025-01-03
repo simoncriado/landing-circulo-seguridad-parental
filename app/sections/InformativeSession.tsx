@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ContentSection } from "../(components)/ContentSection";
 import { twMerge } from "tailwind-merge";
-import InfoSessionImage from "../../public/assets/infoSessionImage.webp";
+import InfoSessionImage from "../../public/assets/infoSessionImage.png";
 import { ButtonLink } from "../components/ButtonLink";
 
 export default function InformativeSession() {
@@ -24,15 +24,17 @@ export default function InformativeSession() {
         </div>
         <div className="flex flex-col gap-4 w-full lg:w-1/2">
           <p>
-            Una adecuada conexión emocional con tu hijo/a es la piedra angular
-            para desarrollar una crianza respetuosa y con sentido.
+            En nuestras <strong>charlas gratuitas</strong> aprenderás qué es el
+            apego, su importancia en el bienestar emocional y los aspectos que
+            deberíamos tener en cuenta para construir vínculos seguros. Podrás
+            conocer con más detalle el programa del Círculo de Seguridad
+            Parental y descubrirás que la seguridad relacional{" "}
+            <strong>NO</strong> se basa en la perfección.
           </p>
+
           <p>
-            Aprende, desde las primeras sesiones cómo mejorar tu rol como
-            cuidadora y podrás observar beneficios para tu hijo/a.
-          </p>
-          <p>
-            Si estás interesada en asistir a una charla gratuita, ¡inscríbete!{" "}
+            Si estás interesada en asistir a una de nuestras charlas gratuitas
+            <strong> ¡inscríbete ahora!</strong>
           </p>
           <ButtonLink
             text="Inscríbete a la charla gratuita"
